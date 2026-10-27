@@ -1,0 +1,28 @@
+:root {
+  /* kleuren */
+  --color-surface: rgb(246, 245, 242); /*achtergrond van de pagina*/
+  --color-card: rgb(255, 255, 255); /*invoervelden en de oneven tabelrijen*/
+  --color-ink: rgb(26, 28, 38); /*titels, footer, tabelhoofding, knop*/
+  --color-muted: rgb(96, 100, 115); /*lopende tekst*/
+  --color-line: rgb(214, 212, 205); /*randen en scheidingslijnen*/
+  --color-on-dark: rgb(236, 238, 246); /*tekst op een donkere achtergrond*/
+  --color-accent: rgb(242, 160, 58); /*accent op donkere achtergrond*/
+  --color-accent-dark: rgb(
+    150,
+    88,
+    10
+  ); /*accent op lichte achtergrond, zoals links*/
+  --color-valid: rgb(42, 132, 72); /*rand van een correct ingevuld veld*/
+  --color-invalid: rgb(178, 48, 48); /*rand van een foutief ingevuld veld*/
+
+  /* lettertypes */
+  --font-heading:
+    Georgia, "Times New Roman", serif; /*h1, h2, h3, legend, tabelhoofding*/
+  --font-body: "Helvetica Neue", Arial, sans-serif; /*al de rest*/
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 1024) {
+}
