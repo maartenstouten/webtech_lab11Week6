@@ -2,22 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <img
-        src="assets/logo.svg"
-        alt="logo" />
+      <img src="assets/logo.svg" alt="logo" />
       <p>Observatorium Zenit</p>
       <nav>
         <ul>
@@ -26,15 +18,151 @@
           <li><a href="#programme">programme</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
-        <a
-          href="#contact"
-          class="btn"
-          >Reserveer</a
-        >
+        <a href="#contact" class="btn">Reserveer</a>
       </nav>
     </header>
     <section class="hero"></section>
     <main></main>
+    <section id="programme"></section>
+    <h2>Programma</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Datum</th>
+          <th scope="col">Start</th>
+          <th scope="col">activiteid</th>
+          <th scope="col">prijs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">do 5 maart</th>
+          <th scope="row">20.00</th>
+          <th scope="row">Maankijken met de refractor</th>
+          <th scope="row">€ 6</th>
+        </tr>
+        <tr>
+          <th scope="row">vr 13 maart</th>
+          <th scope="row">20.30</th>
+          <th scope="row">Saturnus en zijn manen</th>
+          <th scope="row">€ 6</td>
+        </tr>
+        <tr>
+          <th scope="row">za 21 maart</th>
+          <th scope="row">14.00</th>
+          <th scope="row">Zonnewaarnemen met H-alfafilter</th>
+          <th scope="row">	€ 4</th>
+        </tr>
+        <tr>
+          <th scope="row">do 26 maart</th>
+          <th scope="row">20.30</th>
+          <th scope="row">Lezing: hoe meet je een lichtjaar?</th>
+          <th scope="row">gratis</th>
+        </tr>
+        <tr>
+          <th scope="row">vr 27 maart</th>
+          <th scope="row">21.00</th>
+          <th scope="row">Deep sky voor beginners</th>
+          <th scope="row">€ 8</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <section id="contact" class="split">
+      <article>
+        <h3>Reserveer je plaats</h3>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Jouw gegevens</legend>
+            <div class="field">
+              <label for="name">Naam</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="field">
+              <label for="email">E-mailadres</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Jouw bezoek</legend>
+            <div class="field">
+              <label for="date">Datum</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="field">
+              <label for="people">Aantal personen</label>
+              <input
+                type="number"
+                id="people"
+                name="people"
+                min="1"
+                max="8"
+                value="2"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="message">Vraag of opmerking</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+          </fieldset>
+
+          <button class="button" type="submit">Verstuur aanvraag</button>
+        </form>
+      </article>
+
+      <aside aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <address>
+          Sterrenkundelaan 12<br />
+          2000 Antwerpen<br />
+          <a href="tel:+3232000000">03 200 00 00</a><br />
+          <a href="mailto:info@observatorium-zenit.be"
+            >info@observatorium-zenit.be</a
+          >
+        </address>
+        <ul class="social">
+          <li>
+            <a href="#"
+              ><img
+                src="assets/icon-instagram.svg"
+                alt="Instagram"
+                width="48"
+                height="48"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="assets/icon-youtube.svg"
+                alt="YouTube"
+                width="48"
+                height="48"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="assets/icon-facebook.svg"
+                alt="Facebook"
+                width="48"
+                height="48"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="assets/icon-linkedin.svg"
+                alt="LinkedIn"
+                width="48"
+                height="48"
+            /></a>
+          </li>
+        </ul>
+      </aside>
+    </section>
 
     <footer>
       <nav>
